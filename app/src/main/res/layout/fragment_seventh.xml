@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/f1_img"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:layout_marginTop="20sp"
+        android:layout_height="500sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/f1_img"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Enter ROOM ID"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+</FrameLayout>

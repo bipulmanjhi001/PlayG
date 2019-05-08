@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.PlayG">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".model.PubgApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".activity.PaymentList"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.JoinNow"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Withdraw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SuccessMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OTPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".settingmenu.Privacy_policy"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".settingmenu.Contact_us"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".settingmenu.Change_password"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".settingmenu.EditPlayer"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".menuActivities.Settings"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".menuActivities.Events"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".menuActivities.Results"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.AddFund"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Wallet"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MatchRegisteration"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Splashscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Dashboard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PrivacyPolicy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.Introscreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Forgot_Password"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Sign_up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Login"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

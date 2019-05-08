@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/back_wallet"
+                    android:layout_width="wrap_content"
+                    android:translationZ="4sp"
+                    android:background="@drawable/ic_back"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:text="Add Fund to Wallet"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="20sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Add Amount should be 50 or above"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="@string/min_amt"
+                        android:textColor="@color/red"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="right"
+                            android:text="@string/total"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/add_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginRight="160sp"
+                            android:text="50"
+                            android:inputType="number"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/fifty"
+                        android:layout_width="60sp"
+                        android:background="@drawable/sign_button_bg"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="40sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:text="@string/price50"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hundred"
+                        android:layout_width="60sp"
+                        android:background="@drawable/sign_button_bg"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="40sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:text="@string/price100"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twohundred"
+                        android:layout_width="60sp"
+                        android:background="@drawable/sign_button_bg"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="40sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:text="@string/price200"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fivehundred"
+                        android:layout_width="60sp"
+                        android:background="@drawable/sign_button_bg"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="40sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:text="@string/price500"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/add_moneys"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/my_button"
+                    android:text="    Add Money   "
+                    android:textColor="@color/white"
+                    android:layout_height="40sp" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

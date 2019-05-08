@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">PlayG</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_mobile">   Mobile Number</string>
+    <string name="prompt_password"> Password</string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="welcome">WELCOME</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicy</string>
+    <string name="large_text">
+        "Privacy Policy.\n\n"
+
+           "The hacker is not allowed, if found will be kicked out immediately.\n"
+           "Players must be above 18 years.\n"
+           "Winners will get the prize money within 2 hours in their wallet.\n"
+           "You can withdraw the prize money form their wallet to bank account once the wallet
+           amount reaches Rs. 100.\n"
+           "Room Id and Password will be shared to the player before 15 minutes of the Battle.\n"
+           "Player will get the refund if the match did not start due to any technical issue.. \n\n"
+
+        "By using the Service, you agree to the collection and use of information in accordance with this policy."
+        "Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions."
+
+        "Information Collection And Use\n\n"
+
+        "We collect several different types of information for various purposes to provide and improve our Service to you. "
+        "Types of Data Collected \n\n"
+
+        "Personal Data \n\n"
+
+        "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify "
+        "("Personal Data"). Personally identifiable information may include, but is not limited to:\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n"
+
+        "Email address\n"
+        "First name and last name\n"
+        "Phone number\n"
+        "Cookies and Usage Data\n"
+        "Usage Data\n"
+
+
+        "Any personal data collected will be used by us to contact you via phone, "
+        "SMS or email for marketing and to deliver certain updates for services or information you have requested. "
+        "We use cookies and similar tracking technologies to track the activity on our Service and hold certain information. "
+
+        "Tracking  Cookies Data\n\n"
+
+        "Cookies are files with small amount of data which may include an anonymous unique identifier. "
+        "Cookies are sent to your browser from a website and stored on your device.  \n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "Tracking technologies also used are beacons, tags, and scripts to collect"
+        "Session Cookies. We use Session Cookies to operate our Service. "
+        "Preference Cookies. We use Preference Cookies to remember your preferences and various settings.\n\n"
+
+        "Security Cookies. We use Security Cookies for security purposes. \n\n"
+
+        "Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province,
+        country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. "
+
+        "We may use third-party Service Providers to monitor and analyze the use of our Service.\n\n"
+
+    </string>
+    <string name="total">\u20B9</string>
+    <string name="balance">Balance \u20B9 </string>
+    <string name="wallet">\u20B9</string>
+    <string name="title_activity_match">Match</string>
+    <string name="title_activity_upcoming">Upcoming</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="min_amt">Minimum amount required to join match \u20B9 50.0 </string>
+    <string name="price50">\u20B9 100</string>
+    <string name="price100">\u20B9 200</string>
+    <string name="price200">\u20B9 500</string>
+    <string name="price500">\u20B9 1000</string>
+    <string name="title_activity_otp">OTPActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Events</string>
+    <string name="title_notifications">Results</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_phone">This Phone number is incorrect</string>
+</resources>

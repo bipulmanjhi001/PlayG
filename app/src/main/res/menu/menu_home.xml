@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.PlayG.activity.Home">
+
+    <item
+        android:id="@+id/option1"
+        android:title="My History"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option2"
+        android:title="My Wallet"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/option3"
+        android:title="Top Player"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/option4"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/option5"
+        android:title="Sign out"
+        app:showAsAction="never" />
+
+</menu>

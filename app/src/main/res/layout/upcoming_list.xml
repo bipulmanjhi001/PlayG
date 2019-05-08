@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:foreground="?attr/selectableItemBackground"
+    sweet:cardCornerRadius="5dp"
+    android:background="#FFFFFF"
+    android:focusable="false"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    sweet:cardPreventCornerOverlap="false"
+    sweet:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rootView"
+        android:focusable="false"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgTournamentImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:maxHeight="140dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMapType"
+                android:layout_width="56dp"
+                android:src="@drawable/ic_launcher_list"
+                android:layout_height="56dp"
+                android:layout_marginLeft="16dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#777"
+                    android:id="@+id/txtMatchNo"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:id="@+id/id_upcoming"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Fee"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txtChikenDinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TOURNAMENT TIME"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txttypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEAM"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MODE"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txtVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textSize="10sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAP"/>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:gravity="center"
+                    android:id="@+id/txtMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:paddingRight="16dp"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/txtJoinMatch"
+                android:layout_centerVertical="true">
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:progressDrawable="@drawable/whiteprogress"
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"/>
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:id="@+id/txtRemainingPlayer"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:text="only 26 spots left"
+                    android:layout_below="@+id/pb"/>
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTextBlackHalf"
+                    android:id="@+id/txtPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25/100"
+                    android:visibility="invisible"
+                    android:layout_below="@+id/pb"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtJoinMatch"
+                android:background="@drawable/button_primary_strok"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="JOIN MATCH"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

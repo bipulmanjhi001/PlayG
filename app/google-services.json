@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "45373020825",
+    "firebase_url": "https://pubgplay-cbc91.firebaseio.com",
+    "project_id": "pubgplay-cbc91",
+    "storage_bucket": "pubgplay-cbc91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45373020825:android:7d09ee1f7824b534",
+        "android_client_info": {
+          "package_name": "com.PlayG"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45373020825-bcfgfn8jo8q9abe77vue6mjb1u0a907m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.PlayG",
+            "certificate_hash": "e2ec705d00e490d336d52080545a3ed91d104b0e"
+          }
+        },
+        {
+          "client_id": "45373020825-r51c0jpmceb232l8er80gu2t32n357cq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ2vlZnskOUqakYpWN5SKzClHfBPWLw3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45373020825-r51c0jpmceb232l8er80gu2t32n357cq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
